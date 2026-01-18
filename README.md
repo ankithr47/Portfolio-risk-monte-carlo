@@ -20,4 +20,6 @@ using Monte Carlo simulation and estimates tail risk via VaR and CVaR.
 - Heavy-tailed distributions (Student-t)
 - Rolling backtests and VaR validation
 - Stress testing and scenario analysis
+- add rebalancing logic 
+- extend this to multi-day horizons
 
