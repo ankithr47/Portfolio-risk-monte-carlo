@@ -14,7 +14,7 @@ def create_data(path):
     import pandas as pd
 
     tickers = ['SPY', 'TLT', 'GLD', 'QQQ']
-    Period = '2mo'
+    Period = '24mo'
 
     #download daily prices
     raw = yf.download(tickers=tickers, period=Period, interval='1d', auto_adjust=True, progress=False,)
