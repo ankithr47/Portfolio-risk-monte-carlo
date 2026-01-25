@@ -12,9 +12,9 @@ def backtest_var(returns, weights, var_level=0.99, window=60, model='gaussian', 
 
         #simulate returns
         if model == 'gaussian':
-            sims = mc_gaussian_returns(window_returns, n_sims=n_sims)
+            sims = mc_gaussian_returns(window_returns, n_sims=n_sims, ewma=True)
         elif model == 'student-t':
-            sims = mc_student_t_returns(window_returns, n_sims=n_sims)
+            sims = mc_student_t_returns(window_returns, n_sims=n_sims, ewma=True)
 
         portfolio_returns = sims @ weights
         losses = -portfolio_returns
