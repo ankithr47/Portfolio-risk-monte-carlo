@@ -9,12 +9,11 @@ The goal is to demonstrate how distributional assumptions and volatility dynamic
 ## Key Features
 
 * Correlated Monte Carlo simulation of multi-asset portfolio returns
-* Gaussian and Student-t return models for tail-risk comparison
-* EWMA covariance to capture time-varying volatility
-* One-day VaR (95%, 99%) and CVaR estimation
+* Gaussian and Student-t return models for tail risk comparison
+* EWMA covariance to capture time varying volatility
+* One day VaR (95%, 99%) and CVaR estimation
 * Rolling VaR backtesting using historical returns
 * Kupiec unconditional coverage tests for model validation
-* Clean, modular Python implementation with reproducible notebook
 
 ---
 
@@ -24,7 +23,7 @@ The goal is to demonstrate how distributional assumptions and volatility dynamic
 * Frequency: Daily returns
 * Horizon: **One trading day**
 * Backtest period: Multi-year rolling window
-* Portfolio weights: Fixed, exogenous (not optimized)
+* Portfolio weights: Fixed (not optimised)
 
 Expected returns are set to zero to focus on **short-horizon risk**, consistent with industry practice for VaR modeling.
 
@@ -108,19 +107,17 @@ notebooks/
 
 ---
 
-## Future Extensions (Optional)
+## Possible Extensions
 
-* Independence (Christoffersen) VaR tests
 * Multi-day horizon risk forecasts
-* Scenario-based stress testing
-* Dynamic portfolio weights / rebalancing
-* Comparison with historical simulation VaR
+* Independence based VaR backtests
+* Scenario based stress testing
 
 ---
 
 ## Why This Project
 
-This project is designed to mirror **real-world risk modeling workflows**, emphasizing:
+This project is designed to mirror **real world risk modeling workflows**, emphasizing:
 
 * statistical analysis,
 * model validation,
