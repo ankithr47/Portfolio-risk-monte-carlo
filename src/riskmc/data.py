@@ -7,13 +7,13 @@ def load_prices(path):
     prices = pd.read_csv(path, index_col=0, parse_dates=True)
     return prices
 
-def create_data(path):
+def create_data(path, tickers):
     import yfinance as yf
     import pandas_market_calendars as mcal
     from pathlib import Path
     import pandas as pd
 
-    tickers = ['SPY', 'TLT', 'GLD', 'QQQ']
+    tickers = tickers
     Period = '24mo'
 
     #download daily prices
